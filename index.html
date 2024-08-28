@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assignment Wk 3/Pilot Rest stop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+</head>
+
+<body class="bg-dark-subtle bg-gradient text-white">
+    <!-- Here I added a NavBar with links to the other pages on the site. Also added a dropdown menu with miscellaneous links -->
+    <nav class="navbar navbar-expand-lg bg-body-dark-subtle">
+        <div class="container-fluid p-3" id="header">
+            <a class="navbar-brand text-white" href="#">Pilot #1315</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index2.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="index3.html">Social Media</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fuel Prices</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Parking</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Hours of Operation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- This is the main container for all my content which will be used in the grid system. All my content will be placed in this container into rows and columns. -->
+    <div class="container pt-3 pb-5" id="main-container">
+        <!-- this banner will be placed into a row in the main container with a single column containing the h1 and links to the other pages -->
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <h1 class="text-center display-1 border-warning">Welcome To Pilot Rest Stop #1315</h1>
+                <div class="link text-center">
+                    <a href="index.html" class="btn btn-warning fw-bold">Welcome Page</a>
+                    <a href="index2.html" class="btn btn-warning fw-bold">Contact Us</a>
+                    <a href="index3.html" class="btn btn-warning fw-bold">Social Media</a>
+                </div>
+            </div>
+        </div>
+        <!-- Here I added another row in the main container with a single column. I placed the h2 and p in that column since they are paired together -->
+        <div class="row justify-content-center">
+            <div class="col-10 border border-warning mt-3">
+                <h2 class="text-center text-uppercase display-2">About our business</h2>
+                <p class="lead text-center">We are a family owned truck stop, located in Cinnaminson New Jersey off of
+                    highway rt. 130, southbound. We
+                    strive
+                    to make your visit as pleasant and comforting as possible, to give you that home away from home
+                    feeling on your long journey. </p>
+            </div>
+        </div>
+
+        <!-- Here I added an ordered and unordered list of food options and amenities for the business. I first added a container and then a row into that container. In that row I put the food options in a column -->
+        <div class="container m-3">
+            <div class="row justify-content-center">
+                <div class="col-3 listItems">
+                    <h3 class="display-6">Fast Food Options</h3>
+                    <ol>
+                        <li>Jimmy Johns</li>
+                        <li>Spyce Indian Cuisine</li>
+                        <li>Nanus Hot Chicken</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Here I put the amenities in a row, this is still in my container but in a different row. Within this different row I put the amenities in a column -->
+            <div class="row justify-content-center">
+                <div class="col-3  listItems">
+                    <h3 class="display-6">Our amenities</h3>
+                    <ul>
+                        <li>Hot showers</li>
+                        <li>Laundry Machines</li>
+                        <li>Office Spaces</li>
+                        <li>Lounge Access</li>
+                        <li>Conference Room</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Here I created another row in the main container with a single column. I placed the image in that column -->
+        <div class="row justify-content-center">
+            <div class="col-8-auto">
+                <div class="image">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPqNn0hUigmeR48wHO3fjlXgn9-52Sc0vwq9XAH=s680-w680-h510"
+                        class="rounded mx-auto d-block border border-5" alt="Picture of Gas Station" id="gasStationPic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-black fw-bold ">Harneet Bajwa ©️2024</footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

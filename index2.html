@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assignment Wk3/Pilot rest Stop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <body class="bg-dark-subtle bg-gradient text-white">
+        <!-- Here I added a NavBar with links to the other pages on the site. Also added a dropdown menu with miscellaneous links -->
+        <nav class="navbar navbar-expand-lg bg-body-dark-subtle">
+            <div class="container-fluid p-3" id="header">
+                <a class="navbar-brand text-white" href="#">Pilot #1315</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index2.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="index3.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Fuel Prices</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Parking</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hours of Operation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- This is the main container for all my content which will be used in the grid system. All my content will be placed in this container into rows and columns. -->
+        <div class="container pt-3 pb-5" id="main-container">
+            <!-- this banner will be placed into a row in the main container with a single column containing the h1 and links to the other pages -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1 class="text-center display-1 border-warning">
+                        Contact Us
+                    </h1>
+                </div>
+            </div>
+            <!-- In this row we just added a little header saying "We Love Communicating!" and a paragraph describing how we can improve our services -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="text-center">We Love Communicating!</h2>
+                    <p class="text-center">
+                        We would love to hear from you on how we can improve our services to make your visit an even
+                        more pleasant one!
+                        <br>
+                        Our team will reach out to you within 24 hours. Thank you for bearing with us.
+                    </p>
+                </div>
+            </div>
+
+            <!-- In this row we just added a little header saying "Enter your information before the next section which will be a form" -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="text-center">Enter Your Information</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form>
+                        <div class="input">
+                            <span class="input-text">First Name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="input">
+                            <span class="input-text">Last Name</span>
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form>
+                        <div class="input">
+                            <span class="input-text">Email Address</span>
+                            <input type="email" aria-label="Email address" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="input">
+                            <span class="input-text">Phone Number</span>
+                            <input type="tel" aria-label="Phone Number" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2 mt-3">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+
+
+            </div>
+
+    </body>
+
+</html>
